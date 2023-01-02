@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" type="text/css" href="audioPlayer.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+</head>
+<body>
+    <main id="main">
+    	<div class="home-page" id="home-page">
+    		<div>
+    			<i class="fa-solid fa-headphones"></i>
+    		</div>
+    		<div id="quotes" class="quotes">
+    			<h1><i class="fa-solid fa-music"></i>  Music is the best partner at all the situation of life time.  <i class="fa-solid fa-music"></i></h1>
+    			<h4 id="homeBtn">
+    				Click here to Enjoy the Music.
+    			</h4>
+    		</div>
+    	</div>
+    	<div class="player-box">
+    		<div class="player-box-top">
+    			<!-- <i class="fa-solid fa-angle-down"></i> -->
+    			<!-- <i class="fa-solid fa-sort-down"></i> -->
+    			<i class="fa-brands fa-spotify"></i>
+    			<b>PLAYING FROM YOUR LIBRARY</b>
+    			<i id="playlist" class="material-icons">queue_music</i>
+    			<!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+    			<!-- <i class="material-icons">more_horiz</i> -->
+    		</div>
+    		<div class="song-img-box">
+    			<img src="" alt="">
+    		</div>
+    		<div class="song-details-box">
+    			<div class="song-detail">
+    				<h3 class="song-name">Song Name</h3>
+    				<p class="singers-name">singers name</p>
+    			</div>
+    			<div class="like-box">
+    				<i class="fa-regular fa-heart" id="unlike"></i>
+    				<i class="fa-solid fa-heart" id="like"></i>
+    			</div>
+    		</div>
+    		<div class="audio-area">
+    			<div class="audio-bar">
+    				<audio id="music" src="" ></audio>
+   				</div>
+    			<div class="audio-timer">
+    				<p class="start-time">0:00</p>
+    				<p class="end-time">0:00</p>
+    			</div>
+    		</div>
+    		<div class="music-controls">
+    			<i class="fa-solid fa-shuffle"></i>
+    			<div class="music-control-btns">
+    				<i class="fa-solid fa-backward-fast" id="previous-btn"></i>
+    				<div class="play-pause-btn">
+    					<i class="fa-solid fa-play" id="play"></i>
+    					<i class="fa-solid fa-pause" id="pause"></i>
+    				</div>
+    				<i class="fa-solid fa-forward-fast" id="next-btn"></i>
+    			</div>
+    			<i class="fa-solid fa-repeat"></i>
+    		</div>
+    		<div class="playlist-icon">
+    			<!-- <i id="playlist" class="material-icons">queue_music</i> -->
+    		</div>
+    		<div class="playlist-box" id="playlist-box">
+	    		<div class="playlist-top">
+	    			<i class="fa-solid fa-angle-down" id="down-arrow"></i>
+	    			<p>PLAYING FROM YOUR LIBRARY</p>
+	    		</div>
+	    		<h2>Now-Playing</h2>
+	    		<div class="now-playing color">
+					<div>
+						<h3 id="musicName">${allSongs[i].name}</h3>
+						<p id="musicsinger">${allSongs[i].artist}</p>
+					</div>
+					<p>Playing</p>
+					<!-- <audio src="songs/${allSongs[i].src}"></audio> -->
+				</div>
+	    		<div class="music-box" id="music-box">
+	    			<h3>Playlist-Songs</h3>
+	    			<div id="playlistDiv">
+	    				<!-- playlist -->
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+    </main>
+</body>
+<script type="text/javascript" src="library.js"></script>
+<script type="text/javascript" src="music.js"></script>
+<script type="text/javascript" src="audioPlayer.js"></script>
+</html>
+
+
+
